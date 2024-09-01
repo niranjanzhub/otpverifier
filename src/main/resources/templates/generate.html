@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Niranjanz OTP verifier</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" th:href="@{/style.css}">
+</head>
+
+<body>
+    
+    <form action="/otp/generate" method="post">
+		<h1>Generate OTP</h1>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" >
+        <br>
+        <button type="submit">Generate OTP</button>
+
+    </form>
+	
+</body>
+</html>
+
+
+
+
